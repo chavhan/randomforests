@@ -1,0 +1,13 @@
+Call:
+ randomForest(formula = train_data$Sales ~ ., data = train_data,      importance = TRUE, ntree = 500, na.action = na.roughfix) 
+               Type of random forest: regression
+                     Number of trees: 500
+No. of variables tried at each split: 3
+
+          Mean of squared residuals: 2.979059
+                    % Var explained: 59.55
+
+
+
+> sale_accuracy
+[1] 0.5954959

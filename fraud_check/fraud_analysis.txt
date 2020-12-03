@@ -1,0 +1,54 @@
+Call:
+ randomForest(formula = train_data$Taxable.Income ~ ., data = train_data,      importance = TRUE, ntree = 500, na.action = na.roughfix) 
+               Type of random forest: classification
+                     Number of trees: 500
+No. of variables tried at each split: 2
+
+        OOB estimate of  error rate: 21.11%
+Confusion matrix:
+      good risky class.error
+good   352     5   0.0140056
+risky   90     3   0.9677419
+
+
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction good risky
+     good   352    90
+     risky    5     3
+                                          
+               Accuracy : 0.7889          
+                 95% CI : (0.7482, 0.8257)
+    No Information Rate : 0.7933          
+    P-Value [Acc > NIR] : 0.6184          
+                                          
+                  Kappa : 0.0276          
+                                          
+ Mcnemar's Test P-Value : <2e-16          
+                                          
+            Sensitivity : 0.98599         
+            Specificity : 0.03226         
+         Pos Pred Value : 0.79638         
+         Neg Pred Value : 0.37500         
+             Prevalence : 0.79333         
+         Detection Rate : 0.78222         
+   Detection Prevalence : 0.98222         
+      Balanced Accuracy : 0.50913         
+                                          
+       'Positive' Class : good            
+
+pred_train good risky
+     good   357    43
+     risky    0    50
+
+> sum(diag(tab1))/sum(tab1)
+[1] 0.9044444
+
+pred_test good risky
+    good   116    31
+    risky    3     0
+
+> sum(diag(tab2))/sum(tab2)
+[1] 0.7733333
