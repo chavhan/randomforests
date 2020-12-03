@@ -34,7 +34,7 @@ total_result - It is an set of results of accuracy figure on company/fraud/iris 
 
 objective:- 
 (1) company dataset - A cloth manufacturing company is interested to know about the segment or attributes causes high sale. 
-(2) Fraud dataset - Use decision trees to prepare a model on fraud data, treating those who have taxable_income <= 30000 as "Risky" and others are "Good"
-(3) iris dataset- Build a random forest for the ‘iris’ data. 
+(2) Fraud dataset - Use random forests to prepare a model on fraud data, treating those who have taxable_income <= 30000 as "Risky" and others are "Good"
+(3) iris dataset- Build a random forest for the â€˜irisâ€™ data. 
 
 Note :- I have added some png files which are the different graphs on both the datasets for EDA and result observation purpose. Also added the snapshot dataset.   
